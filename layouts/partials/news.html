@@ -1,12 +1,10 @@
 {{ with .Site.Data.news }}
-  {{ if .enable }}
-      <h2>{{ .title }}</h2>
-      <ul>
-        {{ range .items }}
-          <li>
-            <strong>{{ .date }}</strong>: {{ .content | markdownify }}
-          </li>
-        {{ end }}
-      </ul>
-  {{ end }}
+  <h2>{{ .title }}</h2>
+  <ul>
+    {{ range .items }}
+      <li>
+        <strong>{{ .date }}</strong>: {{ .content | markdownify }}
+      </li>
+    {{ end }}
+  </ul>
 {{ end }} 

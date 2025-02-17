@@ -1,8 +1,29 @@
 {{ define "main" }}
   {{ partial "about.html" . }}
-  {{ partial "news.html" . }}
-  {{ partial "publications.html" . }}
-  {{ partial "talks.html" . }}
-  {{ partial "services.html" . }}
-  {{ partial "contacts.html" . }}
+  
+  {{ if (fileExists "data/news.yaml") }}
+    {{ partial "news.html" . }}
+  {{ end }}
+  
+  {{ if (fileExists "data/publications.yaml") }}
+    {{ partial "publications.html" . }}
+  {{ end }}
+  
+  {{ if (fileExists "data/talks.yaml") }}
+    {{ partial "talks.html" . }}
+  {{ end }}
+  
+  {{ if (fileExists "data/services.yaml") }}
+    {{ partial "services.html" . }}
+  {{ end }}
+  
+  {{ if (fileExists "data/contacts.yaml") }}
+    {{ partial "contacts.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.clustrmaps.enable }}
+    <div class="clustrmaps">
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d={{ .Site.Params.clustrmaps.widget_id }}&cl=ffffff&w=a"></script>
+    </div>
+  {{ end }} 
 {{ end }} 

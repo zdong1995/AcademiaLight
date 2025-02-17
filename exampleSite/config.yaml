@@ -64,26 +64,3 @@ module:
       target: assets
   hugoVersion:
     extended: true
-
-# Section Controls
-sections:
-  about:
-    enable: true
-    weight: 1
-  
-  publications:
-    enable: true
-    weight: 2
-    title: "Publications"
-    subtitle: "[Google Scholar]"
-    google_scholar_url: "https://scholar.google.com/citations?user=xxx"
-  
-  talks:
-    enable: true
-    weight: 3
-    title: "Talks"
-  
-  services:
-    enable: true
-    weight: 4
-    title: "Services" 
