@@ -1,6 +1,9 @@
 # AcademiaLight
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Hugo Build](https://github.com/zdong1995/AcademiaLight/actions/workflows/hugo.yml/badge.svg)](https://github.com/zdong1995/AcademiaLight/actions/workflows/hugo.yml) ![GitHub last commit](https://img.shields.io/github/last-commit/zdong1995/AcademiaLight)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/zdong1995/AcademiaLight?style=flat-square)](https://github.com/zdong1995/AcademiaLight/releases)
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
+[![License](https://img.shields.io/github/license/zdong1995/AcademiaLight?style=flat-square)](https://github.com/zdong1995/AcademiaLight/blob/master/LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9e4fdc45-04a7-4a7c-90fd-07fe6195b1e3/deploy-status)](https://app.netlify.com/sites/academialight/deploys) ![GitHub last commit](https://img.shields.io/github/last-commit/zdong1995/AcademiaLight)
 
 A clean, lightweight, and elegant Hugo theme for academic profiles. The UI design is inspired by [minimal-light](https://github.com/yaoyao-liu/minimal-light) theme.
 
