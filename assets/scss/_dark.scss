@@ -1,0 +1,55 @@
+@import 'variables';
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $dark-bg;
+        color: $text-color-dark;
+    }
+    
+    .social-icons a {
+        color: #3eb7f0;
+    }
+    
+    section {
+        border-top-color: #333;
+    }
+
+    h1, h2, h3, .title {
+        color: $secondary-color !important;
+    }
+
+    .publications {
+        .pub-info .title a {
+            color: $secondary-color !important;
+            
+            &:hover {
+                color: $link-hover-color !important;
+            }
+        }
+    }
+    
+    .contact-info {
+        p {
+            color: $text-color-dark;
+            
+            strong {
+                color: $secondary-color;
+            }
+        }
+    }
+    
+    .clustrmaps {
+        #clustrmaps-widget-v2 {
+            filter: invert(0.8) hue-rotate(180deg);
+            background-color: transparent !important;
+            
+            canvas {
+                background-color: transparent !important;
+            }
+        }
+    }
+    
+    .source-note {
+        border-top-color: #333;
+    }
+} 

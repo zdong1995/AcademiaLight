@@ -1,0 +1,150 @@
+@import 'variables';
+
+// Publications
+.publications {
+    margin-top: $section-spacing;
+
+    .bibliography {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin-bottom: $section-spacing;
+            padding-bottom: 1rem;
+            font-size: $base-font-size;
+        }
+    }
+
+    .pub-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .pub-image-container {
+        flex: 0 0 30%;
+        position: relative;
+    }
+
+    .pub-image {
+        position: relative;
+        width: 100%;
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .conference-badge {
+            position: absolute;
+            top: 8px;
+            left: -2px;
+            background-color: $badge-color;
+            color: white;
+            padding: 1px 2px;
+            font-size: 0.8rem;
+            font-weight: 200;
+            border-radius: 2px;
+        }
+    }
+
+    .pub-info {
+        flex: 1;
+
+        .title {
+            margin-bottom: 0.4rem;
+            font-size: $publication-line-height;
+            
+            a {
+                color: $link-color;
+                text-decoration: none;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .author {
+            margin-bottom: 0.4rem;
+            color: #586069;
+            font-size: $publication-line-height;
+        }
+
+        .periodical {
+            margin-bottom: 0.6rem;
+            font-style: italic;
+            font-size: $publication-line-height;
+        }
+    }
+
+    .highlight {
+        color: $highlight-color;
+        font-weight: 500;
+        font-size: 0.9em;
+        font-style: italic;
+        margin-top: 0.4rem;
+    }
+}
+
+// Contact section
+#contact {
+    margin: $section-spacing 0;
+    
+    h2 {
+        color: $primary-color;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-info {
+        margin-bottom: $section-spacing;
+        
+        p {
+            margin: 0.8rem 0;
+            color: #24292e;
+            line-height: $base-line-height;
+            font-size: $base-font-size;
+            
+            strong {
+                color: $primary-color;
+                font-weight: 600;
+                margin-right: 0.5rem;
+                display: inline-block;
+                min-width: 80px;
+            }
+        }
+    }
+}
+
+// Talks
+.talk-row {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    font-size: $base-font-size;
+}
+
+.talk-date {
+    width: 90px;
+    color: #666;
+    font-weight: 500;
+}
+
+.talk-content {
+    flex: 1;
+}
+
+.talk-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: $base-font-size;
+}
+
+.talk-venue {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 5px;
+    font-size: $base-font-size;
+} 

@@ -1,0 +1,72 @@
+@import 'variables';
+
+// Header
+header {
+    width: $header-width;
+    float: left;
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased;
+    padding-top: $header-padding;
+    text-align: center;
+}
+
+// Main content
+section {
+    width: $content-width;
+    float: right;
+    padding-top: 4.5em;
+    padding-bottom: 50px;
+}
+
+// Footer
+footer {
+    width: 232px;
+    float: left;
+    position: fixed;
+    bottom: 30px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+}
+
+// Source note
+.source-note {
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #666;
+    font-size: 14px;
+    text-align: left;
+}
+
+// Responsive layout
+@media print, screen and (max-width: $breakpoint-tablet) {
+    div.wrapper {
+        width: auto;
+        margin: 0;
+        padding: 0 15px;
+    }
+    
+    header, section, footer {
+        float: none;
+        position: static;
+        width: 100%;
+    }
+    
+    section {
+        border-top: 1px solid $border-color;
+        padding: 20px 0;
+    }
+    
+    .source-note {
+        text-align: center;
+    }
+}
+
+@media print, screen and (max-width: $breakpoint-mobile) {
+    body {
+        padding: 15px;
+    }
+    
+    header {
+        padding: 15px 0;
+    }
+} 

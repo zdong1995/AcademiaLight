@@ -1,0 +1,51 @@
+<h1 id="publications"></h1>
+
+<h2>Publications
+</h2>
+
+<div class="publications">
+  <ol class="bibliography">
+    {{ range .Site.Data.publications.publications }}
+    <li>
+      <div class="pub-row">
+        <div class="pub-image-container">
+          {{ if .image }}
+          <div class="pub-image">
+            <img src="{{ .image }}" class="teaser img-fluid" alt="{{ .title }}" />
+            {{ if .conference_short }}
+            <div class="conference-badge">{{ .conference_short }}</div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+        <div class="pub-info">
+          <div class="title"><a href="{{ .links.pdf }}">{{ .title }}</a></div>
+          <div class="author">{{ .authors }}</div>
+          <div class="periodical"><em>{{ .conference }}</em></div>
+          <div class="links">
+            {{ with .links.pdf }}
+            <a href="{{ . }}" class="btn" target="_blank">PDF</a>
+            {{ end }}
+            
+            {{ with .links.code }}
+            <a href="{{ . }}" class="btn" target="_blank">Code</a>
+            {{ end }}
+            
+            {{ with .links.project }}
+            <a href="{{ . }}" class="btn" target="_blank">Project Page</a>
+            {{ end }}
+            
+            {{ with .links.bibtex }}
+            <a href="{{ . }}" class="btn" target="_blank">BibTeX</a>
+            {{ end }}
+            
+            {{ with .highlight }}
+            <span class="highlight">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+</div>

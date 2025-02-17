@@ -1,0 +1,6 @@
+<h2 id="services">Services</h2>
+<ul>
+{{ range .Site.Data.services.services }}
+  <li>{{ .role }} {{ if .venue }}@ {{ .venue }}{{ end }}</li>
+{{ end }}
+</ul>

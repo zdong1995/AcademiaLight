@@ -1,0 +1,86 @@
+@import 'variables';
+
+// Avatar
+.image.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1.5em;
+    width: 7em;
+    
+    img {
+        border-radius: 100%;
+        width: 75%;
+        padding: 12px;
+        margin: 0 auto;
+    }
+}
+
+// Social icons
+.social-icons {
+    margin: 25px 0;
+    
+    a {
+        display: inline-block;
+        margin: 0 12px;
+        color: #002D72;
+        font-size: 1.2rem;
+        
+        &:hover {
+            color: $link-hover-color;
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+// Header info
+.header-info {
+    text-align: center;
+    margin-top: 0;
+    
+    h1 {
+        color: $primary-color;
+        font-size: $h1-font-size;
+        font-weight: $heading-font-weight;
+        margin: 0 0 15px;
+        line-height: 1.2;
+    }
+    
+    .info-item {
+        color: $text-color;
+        font-family: $primary-font;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        margin: 5px 0;
+        font-weight: $text-font-weight;
+        
+        &.email {
+            font-family: $mono-font;
+            font-size: 15px;
+            color: #666;
+            font-weight: 300;
+            margin-top: 5px;
+        }
+    }
+}
+
+// Clustrmaps
+.clustrmaps {
+    margin: $section-spacing 0;
+    width: 50%;
+    clear: both;
+    
+    #clustrmaps-widget-v2 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        
+        canvas {
+            width: 50% !important;
+            height: 50% !important;
+            border-radius: 4px;
+        }
+    }
+} 

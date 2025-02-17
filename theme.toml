@@ -1,0 +1,29 @@
+name = "AcademiaLight"
+license = "MIT"
+licenselink = "https://github.com/zdong1995/AcademiaLight/blob/main/LICENSE"
+description = "A clean, lightweight, and elegant Hugo theme for academic profiles"
+homepage = "https://github.com/zdong1995/AcademiaLight"
+demosite = "https://academialight.netlify.app"
+tags = [
+    "responsive",
+    "clean",
+    "academic",
+    "portfolio",
+    "minimal",
+    "light",
+    "dark mode"
+]
+features = [
+    "responsive",
+    "clean",
+    "academic",
+    "portfolio",
+    "minimal",
+    "light",
+    "dark mode"
+]
+min_version = "0.80.0"
+
+[author]
+    name = "Zhang Dong"
+    homepage = "https://github.com/zdong1995"

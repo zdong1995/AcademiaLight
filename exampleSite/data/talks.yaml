@@ -1,0 +1,17 @@
+talks:
+  - title: "Deep Learning for Computer Vision: Recent Advances and Future Directions"
+    date: "2024-01"
+    venue: "Conference X Keynote"
+    slides: "/slides/conference-x-2024.pdf"
+    video: "https://youtube.com/watch?v=example1"
+  
+  - title: "Robust Machine Learning: Challenges and Solutions"
+    date: "2023-12"
+    venue: "University Y Distinguished Lecture Series"
+    slides: "/slides/university-y-2023.pdf"
+  
+  - title: "Transfer Learning in Practice"
+    date: "2023-10"
+    venue: "Machine Learning Workshop @ Conference Z"
+    slides: "/slides/workshop-z-2023.pdf"
+    video: "https://youtube.com/watch?v=example2" 

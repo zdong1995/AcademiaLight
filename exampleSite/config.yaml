@@ -1,0 +1,89 @@
+baseURL: "https://example.com"
+languageCode: "en-us"
+title: "Academic Profile"
+theme: "AcademiaLight"
+
+# Enable Hugo Emoji
+enableEmoji: true
+
+# Enable Git Info
+enableGitInfo: true
+
+
+params:
+  # Basic Information
+  author: "Your Name"
+  position: "Assistant Professor"
+  affiliation: "Your Affiliation"
+  affiliation_link: "https://university.edu"
+  email: "yourname (at) university.edu"
+  avatar: "/images/avatar.png"
+  description: "Personal academic website"
+  keywords: "academic,professor,research,computer science"
+  
+  # Clustrmaps Configuration
+  clustrmaps:
+    enable: true
+    widget_id: "6xDz_x1h_NBB9nhJjrLOb8kC7Y6TxPr7kgLcCNRqJHo"  # 替换为你的 Clustrmaps ID
+    widget_type: "map"  # 可选: "map" 或 "count"
+    position: "left"    # 可选: "left" 或 "right"
+  
+  # Social Links
+  social:
+    googleScholar: "https://scholar.google.com/citations?user=xxx"
+    blog: "https://example.com/blog"
+    cv: "/files/cv.pdf"
+    github: "https://github.com/username"
+    linkedin: "https://linkedin.com/in/username"
+    x: "https://x.com/username"
+    orcid: "https://orcid.org/xxxx-xxxx-xxxx-xxxx"
+    researchgate: "https://www.researchgate.net/profile/username"
+  
+  # Footer Information
+  footnote: "Powered by Hugo with "
+  footnote_link: "https://github.com/zdong1995/AcademiaLight"
+
+  # Analytics (Optional)
+  googleAnalytics: "" # G-MEASUREMENT_ID
+  
+  # Theme Features
+  features:
+    darkMode: true
+    responsive: true
+    math: true
+    multilingual: true
+
+# Build Settings
+build:
+  writeStats: true
+
+# SCSS/SASS Handling
+module:
+  mounts:
+    - source: assets
+      target: assets
+  hugoVersion:
+    extended: true
+
+# Section Controls
+sections:
+  about:
+    enable: true
+    weight: 1
+  
+  publications:
+    enable: true
+    weight: 2
+    title: "Publications"
+    subtitle: "[Google Scholar]"
+    google_scholar_url: "https://scholar.google.com/citations?user=xxx"
+  
+  talks:
+    enable: true
+    weight: 3
+    title: "Talks"
+  
+  services:
+    enable: true
+    weight: 4
+    title: "Services" 

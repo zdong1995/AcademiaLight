@@ -1,0 +1,19 @@
+{{ with .Site.Data.contacts }}
+  {{ if .enable }}
+      <h2>{{ .title }}</h2>
+      <ul class="contact-list">
+        {{ range .items }}
+          <li>
+            <i class="{{ .icon }}"></i>
+            <span>{{ .value }}</span>
+          </li>
+        {{ end }}
+      </ul>
+  {{ end }}
+{{ end }}
+
+{{ if .Site.Params.clustrmaps.enable }}
+    <div class="clustrmaps">
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d={{ .Site.Params.clustrmaps.widget_id }}&cl=ffffff&w=a"></script>
+    </div>
+{{ end }} 

@@ -1,0 +1,11 @@
+services:
+  - role: Program Committee Member
+    venue: ICML 2024
+  - role: Reviewer
+    venue: NeurIPS 2023
+  - role: Workshop Organizer
+    venue: ICLR 2024 Workshop on Machine Learning
+  - role: Session Chair
+    venue: CVPR 2023
+  - role: Journal Reviewer
+    venue: IEEE Transactions on Pattern Analysis and Machine Intelligence 

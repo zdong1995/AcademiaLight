@@ -1,0 +1,23 @@
+- id: publications
+  translation: "发表论文"
+  
+- id: about
+  translation: "关于我"
+  
+- id: news
+  translation: "新闻"
+  
+- id: googleScholar
+  translation: "谷歌学术"
+  
+- id: links
+  translation: "链接"
+  
+- id: pdf
+  translation: "论文"
+  
+- id: code
+  translation: "代码"
+  
+- id: slides
+  translation: "幻灯片" 

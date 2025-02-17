@@ -1,0 +1,9 @@
+enable: true
+title: "News"
+items:
+  - date: "2024-01"
+    content: "Our paper was accepted to CVPR 2024!"
+  - date: "2023-12"
+    content: "Gave a keynote speech at Conference X."
+  - date: "2023-11"
+    content: "Received the Outstanding Paper Award at Conference Y." 

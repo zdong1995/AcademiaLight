@@ -1,0 +1,23 @@
+- id: publications
+  translation: "Publications"
+  
+- id: about
+  translation: "About Me"
+  
+- id: news
+  translation: "News"
+  
+- id: googleScholar
+  translation: "Google Scholar"
+  
+- id: links
+  translation: "Links"
+  
+- id: pdf
+  translation: "PDF"
+  
+- id: code
+  translation: "Code"
+  
+- id: slides
+  translation: "Slides" 

@@ -1,0 +1,15 @@
+enable: true
+title: "Contact Information"
+items:
+  - type: "email"
+    value: "professor@example.edu"
+    icon: "fas fa-envelope"
+  - type: "office"
+    value: "Room 123, Computer Science Building"
+    icon: "fas fa-building"
+  - type: "phone"
+    value: "+1 (123) 456-7890"
+    icon: "fas fa-phone"
+  - type: "address"
+    value: "123 University Street, City, State 12345"
+    icon: "fas fa-map-marker-alt" 

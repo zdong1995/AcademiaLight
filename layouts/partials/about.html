@@ -1,0 +1,46 @@
+{{ with .Site.Data.about.about_text }}
+<div class="about">
+  <h2>About Me</h2>
+  {{ . | markdownify }}
+</div>
+{{ end }}
+
+<!-- Research Interests Section -->
+{{ with .Site.Data.about.sections.research_interests }}
+  {{ if .enable }}
+    <h2>{{ .title }}</h2>
+    <ul>
+      {{ range .items }}
+        <li>{{ . | markdownify }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
+
+<!-- Education Section -->
+{{ with .Site.Data.about.sections.education }}
+  {{ if .enable }}
+    <h2>{{ .title }}</h2>
+    <ul>
+      {{ range .items }}
+        <li>
+          {{ .degree }}, {{ .institution }}, {{ if .year }} {{ .year }}{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
+
+<!-- Experience Section -->
+{{ with .Site.Data.about.sections.experience }}
+  {{ if .enable }}
+    <h2>{{ .title }}</h2>
+    <ul>
+      {{ range .items }}
+        <li>
+          {{ .title }}, {{ .institution }}, {{ .date }}
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

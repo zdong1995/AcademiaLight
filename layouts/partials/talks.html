@@ -1,0 +1,18 @@
+<h1 id="talks"></h1>
+
+<h2 id="talks">Talks</h2>
+{{ range .Site.Data.talks.talks }}
+<div class="talk-row">
+  <div class="talk-date">{{ .date }}</div>
+  <div class="talk-content">
+    <div class="talk-title">{{ .title }}</div>
+    <div class="talk-venue">{{ .venue }}</div>
+    {{ if .slides }}
+    <a href="{{ .slides }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
+    {{ end }}
+    {{ if .video }}
+    <a href="{{ .video }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Video</a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
